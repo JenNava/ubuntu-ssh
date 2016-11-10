@@ -1,6 +1,23 @@
 # ubuntu-ssh
 just for fun, this is a test proj
 
+
+## Image tags
+
+- 10.04 (lucid)
+- 12.04 (precise)
+- 12.10 (quantal)
+- 13.04 (raring)
+- 13.10 (saucy)
+- 14.04 (trusty)
+- 14.10 (utopic)
+- 15.04 (vivid)
+- 15.10 (wily)
+- 16.04 (xenial)
+- 16.10 (yakkety)
+- 17.10 (zesty)
+
+
 Simple Ubuntu docker images with SSH access
 
 Running jennava/ubuntu-ssh
