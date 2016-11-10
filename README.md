@@ -3,7 +3,7 @@ just for fun, this is a test proj
 
 Simple Ubuntu docker images with SSH access
 
-Running JenNava/ubuntu-ssh
+Running jennava/ubuntu-ssh
 --------------------
 
 To run a container from the image you created earlier with the `trusty` tag
