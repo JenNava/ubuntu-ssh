@@ -1,7 +1,6 @@
 # ubuntu-ssh
 just for fun, this is a test proj
 
-
 ## Image tags
 
 - 10.04 (lucid)
@@ -18,19 +17,10 @@ just for fun, this is a test proj
 - 17.10 (zesty)
 
 
-Simple Ubuntu docker images with SSH access
-
-Running jennava/ubuntu-ssh
---------------------
-
-To run a container from the image you created earlier with the `trusty` tag
-binding it to port 99 in all interfaces, execute:
+Simple sample:
 
 	docker run -d -p 99:22 jennava/ubuntu-ssh:trusty
-
-The first time that you run your container, a random password will be generated
-for user `root`. To get the password, check the logs of the container by running:
-
+	
 	docker logs <CONTAINER_ID>
 
 You will see an output like the following:
@@ -60,6 +50,8 @@ set the environment variable `ROOT_PASS` to your specific password when running 
 
 Adding SSH authorized keys
 --------------------------
+	cd ~/.ssh/
+	ssh-keygen -t rsa -C "example@email.com"
 
 If you want to use your SSH key to login, you can use `AUTHORIZED_KEYS` environment variable. You can add more than one public key separating them by `,`:
 
